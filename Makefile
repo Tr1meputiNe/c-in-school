@@ -1,12 +1,18 @@
-CC=gcc
-SRC=src/hello.c
-OUT=build/hello
+CC = clang
+CFLAGS = -std=c11 -Wall -Wextra -Werror -g
+SRC_DIR = src
 
-all:
-	$(CC) $(SRC) -o $(OUT)
+# make hello
+%: $(SRC_DIR)/%.c
+	$(CC) $(CFLAGS) $< -o $@
 
-run: all
-	./$(OUT)
+# make hello.c
+%.c:
+	$(CC) $(CFLAGS) $@ -o $(basename $@)
+
+# make src/hello.c
+$(SRC_DIR)/%.c:
+	$(CC) $(CFLAGS) $@ -o $(basename $(notdir $@))
 
 clean:
-	rm -f build/*
+	rm -f hello pointer array
