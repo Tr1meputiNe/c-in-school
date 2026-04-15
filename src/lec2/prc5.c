@@ -2,8 +2,9 @@
 
 int main()
 {
-    char a, b, c;
-    scanf("%c%c%c", &a, &b, &c);
-    printf("%c%c%c\n", c, b, a);
+    int a;
+    scanf("%d", &a);
+    a = a / 100 + a / 10 % 10 * 10 + a % 10 * 100;
+    printf("%d\n", a);
     return 0;
 }
