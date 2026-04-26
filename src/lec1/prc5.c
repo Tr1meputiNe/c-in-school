@@ -9,6 +9,7 @@ int main(void)
     scanf("a=%d,b=%d", &a, &b);
     scanf("%f%f", &x, &y);
     scanf("%c%c", &c1, &c2);
+    /*
      * a=3,b=7
      * 8.5 71.82Aa
      *
