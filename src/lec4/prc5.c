@@ -7,7 +7,7 @@ int main(void)
     int r;
     int days;
 
-
+    scanf("%d/%d", &year, &month);
     r = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
 
     switch (month)
