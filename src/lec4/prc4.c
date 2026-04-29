@@ -10,11 +10,6 @@ int main(void)
     printf("3 night\n");
     printf("Please enter your choice: ");
 
-    if (scanf("%d", &choice) != 1)
-    {
-        return 1;
-    }
-
     switch (choice)
     {
     case 1:

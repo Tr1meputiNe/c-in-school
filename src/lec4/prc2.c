@@ -3,7 +3,7 @@
 int main(void)
 {
     int x;
-    int sign;
+    int s;
 
     if (scanf("%d", &x) != 1)
     {
@@ -12,17 +12,17 @@ int main(void)
 
     if (x > 0)
     {
-        sign = 1;
+        s = 1;
     }
     else if (x == 0)
     {
-        sign = 0;
+        s = 0;
     }
     else
     {
-        sign = -1;
+        s = -1;
     }
 
-    printf("%d\n", sign);
+    printf("%d\n", s);
     return 0;
 }

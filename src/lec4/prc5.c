@@ -4,15 +4,11 @@ int main(void)
 {
     int year;
     int month;
-    int is_leap;
+    int r;
     int days;
 
-    if (scanf("%d %d", &year, &month) != 2)
-    {
-        return 1;
-    }
 
-    is_leap = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
+    r = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
 
     switch (month)
     {
@@ -32,7 +28,7 @@ int main(void)
         days = 30;
         break;
     case 2:
-        if (is_leap)
+        if (r)
         {
             days = 29;
         }
@@ -42,7 +38,7 @@ int main(void)
         }
         break;
     default:
-        printf("Invalid month\n");
+        printf("\n");
         return 0;
     }
 

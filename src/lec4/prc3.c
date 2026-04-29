@@ -7,11 +7,6 @@ int main(void)
     int num3;
     int temp;
 
-    if (scanf("%d %d %d", &num1, &num2, &num3) != 3)
-    {
-        return 1;
-    }
-
     if (num1 > num2)
     {
         temp = num1;

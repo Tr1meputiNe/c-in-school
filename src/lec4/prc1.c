@@ -11,24 +11,24 @@ int main(void)
 
     if (n > 0)
     {
-        printf("positive ");
+        printf("正数 ");
     }
     else if (n < 0)
     {
-        printf("negative ");
+        printf("负数 ");
     }
     else
     {
-        printf("zero ");
+        printf("0 ");
     }
 
     if (n % 2 == 0)
     {
-        printf("even\n");
+        printf("偶数\n");
     }
     else
     {
-        printf("odd\n");
+        printf("奇数\n");
     }
 
     return 0;
