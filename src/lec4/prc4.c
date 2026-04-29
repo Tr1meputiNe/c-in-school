@@ -9,6 +9,7 @@ int main(void)
     printf("2 afternoon\n");
     printf("3 night\n");
     printf("Please enter your choice: ");
+    scanf("%d", &choice);
 
     switch (choice)
     {
