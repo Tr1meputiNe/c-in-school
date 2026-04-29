@@ -7,6 +7,8 @@ int main(void)
     int num3;
     int temp;
 
+    scanf("%d %d %d", &num1, &num2, &num3);
+
     if (num1 > num2)
     {
         temp = num1;
